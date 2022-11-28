@@ -9,9 +9,15 @@ change = cv2.imread('img2.jpg')
 orign_resize = cv2.resize(orign , dsize=(500,500), interpolation=cv2.INTER_AREA)
 
 
-change_img_color1 = cv2.cvtColor(orign_resize, cv2.COLOR_BGR2GRAY) pyt
+change_img_color1 = cv2.cvtColor(orign_resize, cv2.COLOR_BGR2GRAY)
 
 
 change_resize = cv2.resize(change , dsize=(500,500), interpolation=cv2.INTER_AREA)
 
 change_img_color2 = cv2.cvtColor(change_resize, cv2.COLOR_BGR2GRAY) 
+
+cv2.imshow("origin", change_img_color1 )
+
+cv2.imshow("change", change_img_color2 )
+
+cv2.waitKey(0)
